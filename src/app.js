@@ -7,3 +7,8 @@ export const  app = express();
 app.use(express.json());
 
 app.use(cors())
+
+// setup routes 
+import { urlRouter } from "./routes/url.route";
+
+app.use('/',urlRouter)
