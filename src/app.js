@@ -6,9 +6,9 @@ export const  app = express();
 // setup middleware 
 app.use(express.json());
 
-app.use(cors())
+app.use(cors());
 
 // setup routes 
-import { urlRouter } from "./routes/url.route";
+import { urlRouter } from "./routes/url.route.js";
 
-app.use('/',urlRouter)
+app.use('/',urlRouter);
